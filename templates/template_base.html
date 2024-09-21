@@ -11,10 +11,21 @@
 </head>
 <body>
     <header>
-        <h1>AGEMED</h1>
-        <button id="login"><a href="">login</a></button>
+        <img src="static/imgs/logo.svg">
+        <div class="cabecalho">
+            <button id="login"><a href="{{url_for('login')}}">Entrar</a></button>
+            <button id="login"><a href="{{url_for('index')}}">Sair</a></button>
+        </div>
     </header>
     <div class="container">
+        <aside>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('ficha')}}">Ficha</a></li>
+                <li><a href="{{url_for('marcar_consulta')}}">Marcar consulta</a></li>
+                <li><a href="{{url_for('agendadas')}}">Agendadas</a></li>
+            </ul>
+        </aside>
         <section>
             {% block conteudo %}
                 
