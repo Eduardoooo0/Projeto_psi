@@ -5,6 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 login_manager = LoginManager()
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'VASCODAGAMA'
 
