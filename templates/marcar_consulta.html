@@ -9,12 +9,13 @@
                 <br>
                 <h2>Agendar consulta</h2>
                 <br>
-                <form action="">
-                        <input type="text" name="nome" placeholder="nome">
-                        <input type="date" name="data" >
-                        <input type="time" name="horario" >
-                        <input type="email" name="email" placeholder="email">
-                        <input type="text" name="motivo_consulta" placeholder="motivo da consulta">
+                <form action="{{ url_for('marcar_consulta') }}" method="post">
+                        <input type="text" name="nome" placeholder="Nome">
+                        <input type="text" name="data" placeholder="Data" >
+                        <input type="text" name="horario" placeholder="Horário">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="motivo_consulta" placeholder="Motivo da consulta">
+                        <input type="submit" value="Enviar">
                 </form>
         </div>
 
